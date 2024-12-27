@@ -1,0 +1,64 @@
+
+/* General Styles */
+.homepage {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    background: #4CAF50;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background: white;
+    color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: 150px;
+    }
+}
